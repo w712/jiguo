@@ -1,0 +1,30 @@
+header {
+    width: 100%;
+    height: 75px;
+    background-color: aqua;
+    /* display: table; */
+    /* word-spacing: -1em; */
+}
+
+.w_logo {
+    display: inline-block;
+    width: 200px;
+    height: 65px;
+    background-color: bisque;
+    padding: 5px 0px;
+    margin-left: 210px;
+}
+
+.w_logo img {
+    width: 200px;
+    height: 65px;
+    padding: 5px 0px;
+    vertical-align: middle;
+}
+
+.w_header_nav {
+    width: 550px;
+    height: 75px;
+    background-color: red;
+    display: inline-block;
+}
