@@ -7,7 +7,7 @@ header {
 }
 
 .w_logo {
-    display: inline-block;
+    float: left;
     width: 200px;
     height: 65px;
     background-color: bisque;
@@ -26,5 +26,5 @@ header {
     width: 550px;
     height: 75px;
     background-color: red;
-    display: inline-block;
+    float: left;
 }
