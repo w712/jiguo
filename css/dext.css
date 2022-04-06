@@ -5,11 +5,13 @@
     /* css3盒子模型 */
     /* box-sizing: border-box; */
 }
+
 /* em 和 i 斜体的文字不倾斜 */
 em,
 i {
     font-style: normal
 }
+
 /* 去掉li 的小圆点 */
 li {
     list-style: none
@@ -28,12 +30,7 @@ button {
 }
 
 a {
-    color: #666;
     text-decoration: none
-}
-
-a:hover {
-    color: #c81623
 }
 
 button,
@@ -41,7 +38,7 @@ input {
     /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
     font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
     /* 默认有灰色边框我们需要手动去掉 */
-    border: 0; 
+    border: 0;
     outline: none;
 }
 
@@ -64,4 +61,9 @@ body {
 
 .clearfix {
     *zoom: 1
+}
+
+.w {
+    width: 1225px;
+    margin: auto;
 }
