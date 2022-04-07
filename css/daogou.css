@@ -1,0 +1,109 @@
+.bg2016{
+    width: 100%;
+    background-color:#F7F7F7;
+}
+.main{
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.main_h{
+    font-size: 16px;
+    color: rgb(66, 65, 65);
+    padding: 15px 0;
+}
+.main_right{
+    float: right;
+    overflow: hidden;
+    margin-top: 0;
+    background-color: white;
+}
+.r_like,.r_share{
+    float: left;
+    height: 50px;
+    padding: 25px;
+    border-radius: 3px; 
+    border: 1px solid rgb(211, 207, 207);   
+}
+.xin{
+    width:50px;
+    text-align: center;
+
+}
+.xinw,.xiny,.zany,.zanw{
+    width: 20px;
+}
+.xiny,.zany{
+    display: none;
+}
+.main_left{
+    width: 850px;
+    float: left;
+}
+.main_n{
+    background-color: white;
+    border-bottom: 1px solid rgb(122, 120, 120);
+    padding: 20px;
+}
+.main_t{
+    margin-bottom: 20px;
+}
+.p_b{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.p_s{
+    overflow: hidden;
+}
+.mname{
+    font-size: 16px;
+    color: gray;
+    float: left;
+}
+.mdate{
+    font-size: 16px;
+    color: gray;
+    float: right;
+}
+.pen{
+    font-size: 16px;
+}
+.zhao{
+    padding: 50px;
+
+}
+.zhj{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.zhjl{
+    display: inline-block;
+}
+
+.f16{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.main_n p{
+    margin: 5px 10px;
+}
+.main_n img{
+    width: 800px;
+}
+.other{
+    padding:10px 25px;
+}
+.other p{
+    color: gray;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.bshare-custom{
+    margin-top: 10px;
+    width: 200px;
+    display: none;
+}
