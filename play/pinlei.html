@@ -20,8 +20,8 @@
                 </a></div>
             <div class="w_header_nav">
                 <ul>
-                    <li><a href="" style="color: red;">首页</a></li>
-                    <li><a href="">酷玩</a></li>
+                    <li><a href="">首页</a></li>
+                    <li><a href="" style="color: red;">酷玩</a></li>
                     <li><a href="">导购</a></li>
                     <li><a href="">试用</a></li>
                     <li><a href="">报告</a></li>
@@ -35,17 +35,68 @@
             </div>
         </div>
     </header>
-    </div>
+
     <!-- 主体部分 -->
     <div class="cooltil">
         <p class="coolbig">发现酷玩</p>
         <ul class="coolli">
-            <li class="coolsm " id="chred"><a href="#">最新</a></li>
-            <li class="coolsm"><a href="#">最热</a></li>
+            <li class="coolsm chred"><a href="#">最新</a></li>
+            <li class="coolsm"><a href="#">最热</a>
+            </li>
             <li class="coolsm"><a href="#">品类</a></li>
         </ul>
     </div>
-    <section class="report-box">
+    <section class="report-box1 clearfix" style="display: block;">
+        <div class="report_samll w">
+            <ul class="zuixin">
+                <!-- <li>
+                    <div class="rebox_img">
+                        <img src="../img/re1.jpg" alt="">
+                    </div>
+                    <p class="rebox_wenzi">空气争化器里面学问多得惊呆你,你选对了吗？</p>
+                    <div class="comment">
+                        <p class="price"><span>￥</span>1212</p>
+                        <p class="reply">
+                            <img src="../img/reply.png" alt="">
+                            <span>3</span>
+                        </p>
+                        <p class="zan">
+                            <img src="../img/zan.png" alt=""><span>3</span>
+                        </p>
+                    </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="upload"><a href="#"><img src="../img/more.png" alt=""> 点击加载更多</a></div>
+        </div>
+    </section>
+    <section class="report-box clearfix" style="display: none;">
+        <div class="report_samll w">
+            <ul class="zuire">
+                <!-- <li>
+                    <div class="rebox_img">
+                        <img src="../img/re1.jpg" alt="">
+                    </div>
+                    <p class="rebox_wenzi">空气争化器里面学问多得惊呆你,你选对了吗？</p>
+                    <div class="comment">
+                        <p class="price"><span>￥</span>1212</p>
+                        <p class="reply">
+                            <img src="../img/reply.png" alt="">
+                            <span>3</span>
+                        </p>
+                        <p class="zan">
+                            <img src="../img/zan.png" alt=""><span>3</span>
+                        </p>
+                    </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="upload"><a href="#"><img src="../img/more.png" alt=""> 点击加载更多</a></div>
+        </div>
+    </section>
+    <section class="report-box2" style="display: none;">
         <div class="wrap category pad25">
             <ul>
                 <!--生活-->
@@ -531,8 +582,9 @@
             </ul>
         </div>
     </section>
+
     <!-- 尾部 -->
-    <div class="bottom">
+    <div class="bottom clearfix">
         <div class="bt-main">
             <div class="ewm"><img src="../img/code.png" alt=""></div>
             <div class="b-center">
@@ -587,6 +639,104 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
+<script src="../js/jquery.min.js"></script>
+<script>
+
+    $(function () {
+        $('.coolsm').on('click', function () {
+            $(this).addClass('chred').siblings().removeClass('chred');
+            var index = $(this).index();
+            $('section').eq(index).show().siblings('section').hide();
+        })
+
+    })
+</script>
+<script>
+    // 最新数据
+    $(function () {
+        kuwan()
+        function kuwan() {
+            $.ajax({
+                type: 'get',
+                url: "http://192.168.0.105:3000/play/new",
+                success: (function (res_2) {
+                    console.log(res_2);
+                    var kuwan_new = template('kw', {
+                        res_2: res_2[0]
+                    })
+                    $('.zuixin').html(kuwan_new)
+                })
+            })
+        }
+    })
+</script>
+<script type="text/html" id="kw">
+    <!--最新数据-->
+{{each res_2}}
+<li>
+    <div class="rebox_img">
+        <img src="{{$value.img}}" alt="">
+    </div>
+    <p class="rebox_wenzi">{{$value.text}}</p>
+    <div class="comment">
+        <p class="price">{{$value.price}}</p>
+        <p class="reply">
+            <img src="../img/reply.png" alt="">
+            <span>{{$value.like}}</span>
+        </p>
+        <p class="zan">
+            <img src="../img/zan.png" alt=""><span>{{$value.words}}</span>
+        </p>
+    </div>
+</li>
+{{/each}}
+</script>
+
+
+
+<script>
+    // 最热请求
+    $(function () {
+        kuwan()
+        function kuwan() {
+            $.ajax({
+                type: 'get',
+                url: "http://192.168.0.105:3000/play/new",
+                success: (function (res_2) {
+                    console.log(res_2);
+                    var kuwan_hot = template('hot', {
+                        res_2: res_2[1]
+                    })
+                    $('.zuire').html(kuwan_hot)
+                })
+            })
+        }
+    })
+</script>
+<script type="text/html" id="hot">
+    <!--最热数据-->
+{{each res_2}}
+<li>
+    <div class="rebox_img">
+        <img src="{{$value.img}}" alt="">
+    </div>
+    <p class="rebox_wenzi">{{$value.text}}</p>
+    <div class="comment">
+        <p class="price">{{$value.price}}</p>
+        <p class="reply">
+            <img src="../img/reply.png" alt="">
+            <span>{{$value.like}}</span>
+        </p>
+        <p class="zan">
+            <img src="../img/zan.png" alt=""><span>{{$value.words}}</span>
+        </p>
+    </div>
+</li>
+{{/each}}
+</script>
+
+<script src="../js/arr.js"></script>
