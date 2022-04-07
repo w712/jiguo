@@ -643,37 +643,11 @@
 </body>
 
 </html>
+<script src="../js/arr.js"></script>
 <script src="../js/jquery.min.js"></script>
-<script>
+<script src="../js/pinlei.js"></script>
 
-    $(function () {
-        $('.coolsm').on('click', function () {
-            $(this).addClass('chred').siblings().removeClass('chred');
-            var index = $(this).index();
-            $('section').eq(index).show().siblings('section').hide();
-        })
 
-    })
-</script>
-<script>
-    // 最新数据
-    $(function () {
-        kuwan()
-        function kuwan() {
-            $.ajax({
-                type: 'get',
-                url: "http://192.168.0.105:3000/play/new",
-                success: (function (res_2) {
-                    console.log(res_2);
-                    var kuwan_new = template('kw', {
-                        res_2: res_2[0]
-                    })
-                    $('.zuixin').html(kuwan_new)
-                })
-            })
-        }
-    })
-</script>
 <script type="text/html" id="kw">
     <!--最新数据-->
 {{each res_2}}
@@ -694,28 +668,6 @@
     </div>
 </li>
 {{/each}}
-</script>
-
-
-
-<script>
-    // 最热请求
-    $(function () {
-        kuwan()
-        function kuwan() {
-            $.ajax({
-                type: 'get',
-                url: "http://192.168.0.105:3000/play/new",
-                success: (function (res_2) {
-                    console.log(res_2);
-                    var kuwan_hot = template('hot', {
-                        res_2: res_2[1]
-                    })
-                    $('.zuire').html(kuwan_hot)
-                })
-            })
-        }
-    })
 </script>
 <script type="text/html" id="hot">
     <!--最热数据-->
@@ -739,4 +691,3 @@
 {{/each}}
 </script>
 
-<script src="../js/arr.js"></script>
