@@ -5,35 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/pinlei.css">
-    <link rel="stylesheet" href="../css/page.css">
     <link rel="stylesheet" href="../css/dext.css">
+    <link rel="stylesheet" href="../css/page.css">
     <link rel="stylesheet" href="../css/tail.css">
     <link rel="stylesheet" href="../css/trynew.css">
-    <script src="./js/template-web.js"></script>
+    <script src="../js/template-web.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/page.js"></script>
 </head>
 <body>
-    <div class="outer">
-        <header id="head">
-            <div class="head_logo"><img src="../img/logonew.png"></div>
-            <ul class="head_center">
-                <li><a href="./index.html">首页</a></li>
-                <li><a href="./play/play1.html" >酷玩</a></li>
-                <li><a href="./guide/daogou.html">导购</a></li>
-                <li><a href="./try/try1.html">试用</a></li>
-                <li><a href="#" >报告</a></li>
-            </ul>
-            <div class="h_right">
-                <img src="./img/search.png" alt="">
-                <span class="h_span"><a href="#">注册</a></span>
-                <span class="h_span"><a>登录</a></span>
+    <header>
+        <div class="w">
+            <div class="w_logo"><a href="#">
+                    <img src="../img/logonew.png" alt="">
+                </a></div>
+            <div class="w_header_nav">
+                <ul>
+                    <li><a href="../html/page.html" style="color: red;">首页</a></li>
+                    <li><a href="../play/pinlei.html">酷玩</a></li>
+                    <li><a href="../guide/daogou.html">导购</a></li>
+                    <li><a href="../try/try1.html">试用</a></li>
+                    <li><a href="">报告</a></li>
+                </ul>
             </div>
-        </header>
-    </div>
+            <div class="w_login">
+                <a href="#">注册</a>
+            </div>
+            <div class="w_search">
+                <a href="#"><img src="../css/img/search.png" alt=""></a>
+            </div>
+        </div>
+    </header>
         <!-- 大图片-->
+        <nav>
         <div class="w_big_img">
             <img src="../img/original.jpg" alt="">
         </div>
+      
         <!-- 右边倒计时 -->
         <div class="w_sound">
             <h1>幻响小贝HiFi2.1音箱</h1>
@@ -43,10 +53,11 @@
                 <p class="num_yx">20台</p>
             </div>
             <div class="timer">
-                申请时间剩余：<span>13天5小时37分钟</span>
+                申请时间剩余：<span></span>
             </div>
             <a href="#" class="request">立即申请</a>
         </div>
+      </nav>
         <!-- 试用流程 -->
         <div class="trytop">
             <div class="trytop_t">
@@ -111,18 +122,170 @@
                         <div class="clear"></div>
                         <p class="tp5">半果控制中心是一台功能高度集成的便携控制设备,包含WiFi收发模块、蓝牙4.1模块、独立声卡系统、音乐控制拨盘、麦克风语音接受、3.5mm耳机接口、高数据传输、QC2.2快速充电、Type-C接口等。仅需将其与电脑连接,即可解决科技生活中遇到的种种痛点。</p>
                         <p class="tp6"> 试用报告要求100%原创，抄袭会被封杀哦</p>
+                        <div class="hdlc">
                         <p class="titl1">活动流程</p>
-                        
-
+                        <p><span style="font-weight: bold;color: black;">1.名单公布:</span><span>试用名单将在活动页面公布</span></p>
+                        <p><span style="font-weight: bold;color: black;">2.试用通知:</span><span>试用名单将在活动页公布</span></p>
+                        <p><span style="font-weight: bold;color: black;">3.押金收取:</span><span>名单公布后客服将以短信的方式通知申请成功者,2天不回复算弃权</span></p>
+                        <p><span style="font-weight: bold;color: black;">4.产品寄送:</span><span>客服将统一通知大家收取产品押金</span></p>
+                        <p><span style="font-weight: bold;color: black;">5.网络晒单:</span><span>收货后请在微博或朋友圈等社交网络晒单</span></p>
+                        <p><span style="font-weight: bold;color: black;">6.试用报告:</span><span>收到货的10天内完成博爱高并上传</span></p>
+                        <p><span style="font-weight: bold;color: black;">7.产品回收:</span><span>选取6篇优秀报告,赠送产品</span></p>
+                        <p><span style="font-weight: bold;color: black;">8.押金退回:</span><span>活动结束返回,人为损坏需赔偿</span></p>
+                        <p class="titl1">活动时间</p>
+                        <p><span style="font-weight: bold;color: black;">1.申请报名:</span><span>2016/02/02 - 2016-02-17</span></p>
+                        <p><span style="font-weight: bold;color: black;">2.发布名单:</span><span>2016-02-20</span></p>
+                        <p><span style="font-weight: bold;color: black;">3.发货日期:</span><span>2016/02/22 (以实际为准)</span></p>
+                        <p><span style="font-weight: bold;color: black;">4.试用期限:</span><span>收到产品后10天内</span></p>
+                        </div>
                 </div>
                 <!-- 主体右边 -->
                 <div class="smallright">
                     <div class="cp1">
                         <div class="kuang1"></div>
-                        <h2>产品介绍</h2>
+                        <h2>购买渠道</h2>
+                        <div class="price">
+                            <p>￥&nbsp;&nbsp;499</p>
                         </div>
+                        <button class="buy">点击购买</button>
+                        <div class="from">
+                            <p>来自官网</p>
+                        </div>
+                        <div class="k">
+                        <div class="kuang1"></div>
+                        <h2>极果体验师</h2>
+                        </div>
+                        <img class="tiyan" src="../img/tiyanImg.jpg">
+                        <div class="texty">
+                        <p>第一时间体验新品,大众试用优先通过,还有定向邀请试用,新品玩到手软!</p>
+                        <p style="font-size: 20px;font-weight: bold;color: black; margin: 10px 0;">要求</p>
+                        <p>是某个领域的大神级玩家,在社交网络或圈子里有大影响力,善写作会拍摄</p>
+                        <p style="font-size: 20px;font-weight: bold;color: black;margin: 10px 0;">申请</p>
+                        <p>1.关注极果公众号:JguoJguo</p>
+                        <p>&nbsp; (或扫描下方二维码)</p>
+                        <p>2.在公众号内回复:体验师</p>
+                        <p></p>
+                        <div class="k">
+                            <div class="kuang1"></div>
+                            <h2>关注我们</h2>
+                            </div>
+                            <img class="zuih" src="../img/myCode.jpg">
+                        </div>
+                     </div>
                 </div>
+                <div class="clear"></div>
+                
+                    <div class="hot_try">
+                        <p class="hot_p">
+                            <span style="font-size: 20px; font-weight: bold;color: black;">热门试用</span>
+                            <span style="width: 20px;height: 20px;float: right;line-height: 20px;"><img src="../img/readMore.png" alt=""></span>
+                            <span style="float: right;font-size: 14px;color: red;margin-right: 5px;">查看更多</span>
+                        </p>
+                        <div class="pp"></div>
+                        
+                    </div>
             </div>
         </section>
+
+        <footer>
+            <div class="w_tail w">
+                <!-- 二维码 -->
+                <div class="w_code_box">
+                    <div class="w_code">
+                        <img src="../img/code.png" alt="">
+                    </div>
+                    <div class="w_logoImg">
+                        <img src="../img/logoImg.jpg" alt="">
+                    </div>
+                    <div class="kw_platform">
+                        <p>
+                            全球酷元试用导购平台
+                            酷新奇好玩品质
+                        </p>
+                        <p> 微信添加"Ug心oguo
+                            获取我们的服务。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边详情 -->
+            <div class="w_tail_nav">
+                <dl>
+                    <dt>免费试用</dt>
+                    <dd><a href="#">试用流程</a></dd>
+                    <dd><a href="#">如何提高成功率</a></dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd><a href="#">智东西</a></dd>
+                    <dd><a href="#">搜狐IT</a></dd>
+                    <dd><a href="#">搜狐数码</a></dd>
+                    <dd><a href="#">凤凰数码</a></dd>
+                    <dd><a href="#">泡泡网</a></dd>
+                    <dd><a href="#">ZUK社区</a></dd>
+                    <dd><a href="#">极客公园</a></dd>
+                    <dd><a href="#">果库</a></dd>
+                </dl>
+                <dl>
+                    <dd><a href="#">智东西</a></dd>
+                    <dd><a href="#">WEIBUSI</a></dd>
+                    <dd><a href="#">腾讯科技</a></dd>
+                    <dd><a href="#">凤凰科技</a></dd>
+                    <dd><a href="#">PConline</a></dd>
+                    <dd><a href="#">3W啡</a></dd>
+                    <dd><a href="#">亿觅emie</a></dd>
+                    <dd><a href="#">易迅易启所</a></dd>
+                </dl>
+                <dl>
+                    <dt>购买攻略</dt>
+                    <dd><a href="#">美亚海淘教程</a></dd>
+                    <dd><a href="#">日亚海淘教程</a></dd>
+                    <dd><a href="#">海淘转运攻略</a></dd>
+                    <dd><a href="#">kickstarter众等购买攻略</a></dd>
+                    <dd><a href="#">indiegogo众筹购买攻略</a></dd>
+                </dl>
+                <dl>
+                    <dt>厂商合作</dt>
+                    <dd><a href="#">关于极果</a></dd>
+                    <dd><a href="#">联系我们</a></dd>
+                    <dd><a href="#">商务合作：BD@jiguo.com</a></dd>
+                    <dd><a href="#">CEO邮箱：GEO@jiguo.com</a></dd>
+                </dl>
+            </div>
+            <h5>@2016极果版权所有</h5>
+        </footer>
 </body>
 </html>
+<script type="text/html" id="myfirst">
+    <ul class="full0ul">
+        {{each value}}
+       <li class="list0">
+        <img src={{$value.img}} class="imgy">
+        <p class="tp">{{$value.text}}</p>
+        <div class="sp">
+            <button class="left">2032</button>
+            <button class="right">20</button>
+        </div>
+        <p class="pr">{{$value.price}}<span style="color: black;margin-left: 10px;" >申请</span></p>
+        <p class="bot">剩余天数:&nbsp;&nbsp;{{$value.like}}</p>
+       </li>
+        {{/each}}
+    </ul>
+</script>
+<script>
+    var pp_=document.getElementsByClassName('pp')[0];
+    var myajax=new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    myajax.open('get','http://192.168.0.128:3000/play/new',true);
+    myajax.send();
+    myajax.onreadystatechange=function(){
+    if(myajax.readyState==4){
+        if(myajax.status==200){
+            var data=JSON.parse(myajax.responseText);
+            console.log(data);
+            var my=template('myfirst',{value:data[1].splice(0,3)});
+            pp_.innerHTML=my;
+
+        }
+    }
+}
+
+</script>
