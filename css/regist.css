@@ -1,0 +1,85 @@
+* { padding: 0; margin: 0; }
+
+.all { width: 1100px; margin: auto; }
+
+.sum { width: 100%; height: 100%; }
+
+.sum .top { width: 100%; margin: auto; height: 60px; border-bottom: 2px solid #888; }
+
+.sum .top .left { float: left; }
+
+.sum .top .left .img { float: left; height: 60px; }
+
+.sum .top .left .img img { height: 100%; }
+
+.sum .top .left ul { float: left; list-style: none; line-height: 60px; }
+
+.sum .top .left ul li { float: left; margin-left: 40px; }
+
+.sum .top .left ul li a { text-decoration: none; color: black; font-size: 20px; }
+
+.sum .top .left ul li a:hover { color: red; }
+
+.sum .top .right { float: right; line-height: 60px; }
+
+.sum .top .right input { height: 30px; border-radius: 15px; font-size: 16px; text-indent: 1em; }
+
+.sum .top .right a { display: inline-block; width: 40px; height: 30px; line-height: 30px; text-align: center; border-radius: 5px; text-decoration: none; color: red; border: 1px solid red; }
+
+.sum .contant { width: 100%; height: 100%; overflow: hidden; margin: auto; background-color: #f7f7f7; }
+
+.sum .contant .subcontant { width: 100%; height: 500px; background-color: white; border: 1px solid #bebebe; margin: 20px auto; }
+
+.sum .contant .subcontant .redfangkuai { width: 5px; height: 20px; background-color: red; float: left; margin: 25px 10px; }
+
+.sum .contant .subcontant span { display: inline-block; margin-top: 25px; }
+
+.sum .contant .subcontant .regist { width: 550px; height: 500px; margin: 50px 400px; }
+
+.sum .contant .subcontant .regist input { width: 300px; height: 30px; margin: 10px; border-radius: 5px; text-indent: 1em; background-color: #f7f7f7; font-size: 14px; border: none; outline: none; }
+
+.sum .contant .subcontant .regist ::-webkit-input-placeholder { font-size: 12px; }
+
+.sum .contant .subcontant .regist .phone_msg { font-size: 12px; color: #666; }
+
+.sum .contant .subcontant .regist .username_msg { font-size: 12px; color: #666; }
+
+.sum .contant .subcontant .regist .pass_msg { font-size: 12px; color: #666; }
+
+.sum .contant .subcontant .regist .repass_msg { font-size: 12px; color: #666; }
+
+.sum .contant .subcontant .regist .imgyz, .sum .contant .subcontant .regist .numyz { width: 150px; }
+
+.sum .contant .subcontant .regist .imgyanzzheng { float: right; margin-right: 240px; margin-top: 10px; }
+
+.sum .contant .subcontant .regist .getyanzheng { float: right; margin-right: 240px; margin-top: 10px; width: 122px; height: 35px; border: 1px solid #999; text-align: center; line-height: 35px; font-size: 12px; color: #999; border-radius: 5px; }
+
+.sum .contant .subcontant .regist button { width: 300px; height: 30px; background-color: #fe5341; color: white; font-size: 12px; text-align: center; line-height: 30px; border: none; margin: 10px; border-radius: 5px; }
+
+.sum .bottom { position: relative; width: 100%; height: 400px; background-color: #505050; box-sizing: border-box; padding-top: 60px; }
+
+.sum .bottom .left { float: left; width: 100px; }
+
+.sum .bottom .left img { width: 100%; }
+
+.sum .bottom .mid { float: left; margin-left: 30px; }
+
+.sum .bottom .mid p { margin-top: 30px; width: 121px; font-size: 12px; color: #a3a3a3; }
+
+.sum .bottom .right { float: left; }
+
+.sum .bottom .right ul { float: left; list-style: none; margin-left: 40px; }
+
+.sum .bottom .right ul li { margin-top: 2px; color: #a3a3a3; }
+
+.sum .bottom .right ul li:nth-of-type(1) { color: white; font-size: 16px; font-weight: 900; }
+
+.sum .bottom .right ul li:nth-of-type(2) { margin-top: 30px; }
+
+.sum .bottom .right ul:nth-of-type(3) { margin-left: 20px; }
+
+.sum .bottom .right ul:nth-of-type(3) li:nth-of-type(1) { color: #a3a3a3; font-size: 14px; font-weight: normal; margin-top: 56px; }
+
+.sum .bottom .right ul:nth-of-type(3) li:nth-of-type(2) { margin-top: 0px; }
+
+.sum .bottom .right p { color: #a3a3a3; position: absolute; left: 50%; bottom: 2%; transform: translateX(-50%); }

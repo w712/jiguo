@@ -1,0 +1,93 @@
+nav {
+    width: 100%;
+    /* height: 2000px; */
+    /* background-color: aqua; */
+}
+
+/* .w_teamwork {
+    height: 1000px;
+    background-color: bisque;
+} */
+
+/* 右边简介 */
+.w_help {
+    float: left;
+    width: 280px;
+    height: 310px;
+    background-color: #f7f7f7;
+}
+
+.help_business {
+    padding-top: 40px;
+}
+
+.w_business {
+    float: right;
+    width: 750px;
+    height: auto;
+    background-color: #f7f7f7;
+    margin-bottom: 40px;
+}
+
+.title {
+    width: 220px;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+    border-bottom: 1px solid;
+    margin: 0px 30px;
+}
+
+.w_help dt {
+    font-size: 15px;
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+.w_help dd {
+    margin-left: 40px;
+}
+
+.w_help a {
+    color: #484759;
+}
+
+.w_help dl:nth-of-type(1) {
+    margin-top: 10px;
+}
+
+.w_help dl:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+/* 左边简介 */
+.title1 {
+    width: 690px;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+    border-bottom: 1px solid;
+    margin: 0px 30px;
+}
+
+.jiguo {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 30px 0px;
+    margin-left: 30px;
+}
+
+.text_one {
+    font-size: 16px;
+    margin: 0px 30px;
+}
+
+.text_two {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.text_three {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}

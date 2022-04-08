@@ -53,7 +53,9 @@ footer {
     color: #f9fef6;
     float: left;
 }
-
+.w_tail_nav dt a{
+    color: #f9fef6;
+}
 .w_tail_nav dt {
     font-size: 18px;
 }
