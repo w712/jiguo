@@ -1,88 +1,109 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
+
 /* 头部 */
-.outer{
+.outer {
     border: 2px solid gray;
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
 }
-#head{
+
+#head {
     width: 1100px;
-    margin:0 auto;
+    margin: 0 auto;
     overflow: hidden;
     padding: 10px 0;
     box-sizing: border-box;
 }
-.head_logo{
+
+.head_logo {
     float: left;
 }
-.head_logo img{
+
+.head_logo img {
     width: 210px;
 }
-.head_center{
+
+.head_center {
     float: left;
     overflow: hidden;
-    margin-left:50px;
+    margin-left: 50px;
 }
-.head_center li{
+
+.head_center li {
     float: left;
-    margin:25px 20px;
+    margin: 25px 20px;
 }
-.head_center li a{
-    color:black;
+
+.head_center li a {
+    color: black;
     text-align: center;
     font-size: 24px;
 }
-.h_right{
+
+.h_right {
     float: right;
     position: relative;
 }
-.h_right img{
+
+.h_right img {
     width: 28px;
-    position:absolute;
-    top:25px;
-    left:-31px;
+    position: absolute;
+    top: 25px;
+    left: -31px;
 }
-.h_span{
+
+.h_span {
     display: inline-block;
-    margin:20px 15px;
-    border:1px solid red;
+    margin: 20px 15px;
+    border: 1px solid red;
     border-radius: 5px;
-    padding:3px 5px;
+    padding: 3px 5px;
 }
-.h_span a{
-    color:red;
+
+.h_span a {
+    color: red;
     font-size: 20px;
 }
+
 /* 主体部分 */
-.cooltil{
-    width:max-content ; 
-    margin:0 auto;   
+.cooltil {
+    width: max-content;
+    margin: 0 auto;
 }
-.coolbig{
+
+.coolbig {
     font-size: 40px;
     font-weight: 400;
     padding: 34px 0 30px;
     text-align: center;
 }
-.coolli{
+
+.coolli {
     overflow: hidden;
     width: max-content;
 
 }
-.coolsm{
+
+.coolsm {
     float: left;
     padding: 5px 50px;
-    font-size:18px;
+    font-size: 18px;
 
 }
+<<<<<<< HEAD
 /* #chred{
+=======
+
+.chred {
+>>>>>>> 5bd885e7d08411bc2cb71ae907cc92c055452f50
     color: #f15431;
     border-bottom: 4px solid #f15431;
     padding-bottom: 8px;
@@ -90,25 +111,29 @@ li{
 .report-box {
     background: #f7f7f7;
     overflow: hidden;
-    
+
 }
+
 section {
     display: block;
 }
+
 .category {
     padding-bottom: 5px;
 }
+
 .wrap {
     width: 1100px;
     text-align: left;
     margin: 0 auto;
 }
+
 .category li dt::before {
     background: #fe5341;
 }
 
 /* 在dt之前插入红色的长方形 */
-.category li dt::before {   
+.category li dt::before {
     content: '';
     position: absolute;
     left: 0;
@@ -117,92 +142,207 @@ section {
     width: 6px;
     height: 25px;
 }
-.pad25{
-    padding-top:25px;
+
+.pad25 {
+    padding-top: 25px;
 }
-.category{
-    padding-bottom:5px;
+
+.category {
+    padding-bottom: 5px;
 }
-.category li{
+
+.category li {
     background: #fff;
-    margin-bottom:35px;
-    border:1px solid #ebecec;
-    border-radius:6px;
+    margin-bottom: 35px;
+    border: 1px solid #ebecec;
+    border-radius: 6px;
 }
-.category li dt{
-    position:relative;
-    padding:19px 0 19px 30px;
-    font-size:16px;
-    line-height:25px;
+
+.category li dt {
+    position: relative;
+    padding: 19px 0 19px 30px;
+    font-size: 16px;
+    line-height: 25px;
 }
-.category li dt::before{
-    content:'';
-    position:absolute;
-    left:0;top:19px;
-    display:block;
-    width:6px;
-    height:25px;
+
+.category li dt::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 19px;
+    display: block;
+    width: 6px;
+    height: 25px;
 }
-.category li dd{
-    padding:0 13px 18px;
+
+.category li dd {
+    padding: 0 13px 18px;
 }
-.category li dd:after{
-    clear:both;
-    content:"";
-    display:block;
-    height:0;
-    visibility:hidden;
+
+.category li dd:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
-.category li dd:nth-child(3){
-    border-top:1px dashed #e0e0e0;
-    padding-bottom:35px;
+
+.category li dd:nth-child(3) {
+    border-top: 1px dashed #e0e0e0;
+    padding-bottom: 35px;
 }
-.category dd .list{
-    float:left;
-    width:150px;
-    text-align:center;
-    font-size:14px;
-    margin-top:17px;
+
+.category dd .list {
+    float: left;
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 17px;
 }
-.category li dd:last-child .list{
-    margin-top:0;
+
+.category li dd:last-child .list {
+    margin-top: 0;
 }
-.category dd .list .info{
-    padding-top:12px;
+
+.category dd .list .info {
+    padding-top: 12px;
 }
-.report-box .use dt{
-    margin-bottom:35px;
-    background:#fff;
+
+.report-box .use dt {
+    margin-bottom: 35px;
+    background: #fff;
 }
-.bottom{
+
+.bottom {
     width: 100%;
     background-color: #505050;
 }
-.bt-main{
+
+.bt-main {
     width: 1100px;
     height: 198px;
     padding: 50px 0;
     margin: 0 auto;
 }
-.ewm{
+
+.ewm {
     float: left;
 }
-.b-center dl{
+
+.b-center dl {
     float: left;
-    margin-left:20px ;
+    margin-left: 20px;
 }
-.b-center dt{
+
+.b-center dt {
     color: #fff;
     font-weight: 300;
     font-size: 20px;
     margin-bottom: 30px;
 }
-.b-center dd{
+
+.b-center dd {
     font-size: 14px;
     margin-bottom: 2px;
-    color: #a3a3a3;;
+    color: #a3a3a3;
+    ;
     font-weight: 500;
 }
-.mk{
+
+.mk {
     margin-left: -20px;
+}
+
+/* 最新 */
+.report-box1,
+.report-box {
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    padding-top: 40px;
+}
+
+.rebox_img img {
+    width: 227px;
+    height: 130px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.report-box1 ul,
+.report-box ul {
+    width: 1120px;
+    height: auto;
+    /* background-color: aquamarine; */
+}
+
+.report-box1 li,
+.report-box li {
+    width: 227px;
+    height: 235px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    float: left;
+    margin-right: 50px;
+    border: 1px solid rgb(172, 160, 160);
+    font-size: 13px;
+    box-sizing: content-box;
+    margin-bottom: 20px;
+}
+
+/* 图片下面的文字 */
+.rebox_wenzi {
+    padding: 5px 9px;
+}
+
+/* 点赞和评论 */
+.comment {
+    margin-top: 15px;
+}
+
+.zan,
+.reply {
+    float: right;
+    vertical-align: middle;
+    margin-right: 20px;
+    position: relative;
+}
+
+.zan img {
+    top: 3.5px;
+    left: -12px;
+    position: absolute;
+}
+
+.reply img {
+    top: 3.5px;
+    left: -14px;
+    position: absolute;
+}
+
+.price {
+    margin-left: 5px;
+    color: red;
+    float: left;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.price span {
+    margin-right: 5px;
+}
+
+/* 点击加载更多 */
+.upload {
+    width: 100%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.upload a {
+    color: #fe9e93;
 }
