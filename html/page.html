@@ -21,8 +21,8 @@
                 </a></div>
             <div class="w_header_nav">
                 <ul>
-                    <li><a href="" style="color: red;">首页</a></li>
-                    <li><a href="">酷玩</a></li>
+                    <li><a href="../html/page.html" style="color: red;">首页</a></li>
+                    <li><a href="../play/pinlei.html">酷玩</a></li>
                     <li><a href="">导购</a></li>
                     <li><a href="">试用</a></li>
                     <li><a href="">报告</a></li>
@@ -51,7 +51,7 @@
                 <p class="num_yx">20台</p>
             </div>
             <div class="timer">
-                申请时间剩余：<span>13天5小时37分钟</span>
+                申请时间剩余：<span></span>
             </div>
             <a href="#" class="request">立即申请</a>
         </div>
@@ -294,10 +294,10 @@
 </html>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/arr.js"></script>
+<script src="../js/page.js"></script>
 <script>
     // 返回顶部
     // $(function () {
-
 
     //     $(document).scrollTop(200)
     //     var back = $('.w_hot_box').offset().top;
@@ -314,30 +314,11 @@
 
 
 
-
 </script>
 
 
 <!-- 报告精选 -->
-<script>
-    // 报告精选
-    $(function () {
-        baogao()
-        function baogao() {
-            $.ajax({
-                type: 'get',
-                url: "http://192.168.0.105:3000/report/new",
-                success: (function (res_1) {
-                    console.log(res_1);
-                    var path_new = template('bg', {
-                        res_1: res_1
-                    })
-                    $('.baogao').html(path_new)
-                })
-            })
-        }
-    })
-</script>
+
 <script type="text/html" id="bg">
 {{each res_1}}
 <!-- 报告精选 -->
@@ -359,26 +340,7 @@
 </li>
 {{/each}}
 </script>
-<!--导购请求 -->
-<script>
-    // 导购请求
-    $(function () {
-        daogao()
-        function daogao() {
-            $.ajax({
-                type: 'get',
-                url: "http://192.168.0.105:3000/guid/new",
-                success: (function (res) {
-                    console.log(res);
-                    var path_new = template('tpi', {
-                        res: res
-                    })
-                    $('.daogao').html(path_new)
-                })
-            })
-        }
-    })
-</script>
+
 <script type="text/html" id="tpi">
     <!-- 导购渲染 -->
     {{each res}}
@@ -401,25 +363,6 @@
 {{/each}}
 </script>
 
-<!--发现酷玩-->
-<script>
-    $(function () {
-        kuwan()
-        function kuwan() {
-            $.ajax({
-                type: 'get',
-                url: "http://192.168.0.105:3000/play/new",
-                success: (function (res_2) {
-                    console.log(res_2);
-                    var kuwan_new = template('kw', {
-                        res_2: res_2[0]
-                    })
-                    $('.kuwan').html(kuwan_new)
-                })
-            })
-        }
-    })
-</script>
 <script type="text/html" id="kw">
     <!--发现酷玩-->
     {{each res_2}}
