@@ -1,0 +1,95 @@
+/*  尾部 */
+footer {
+    padding-top: 52px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #505050;
+    position: relative;
+}
+
+.w_code_box {
+    width: 321px;
+    height: 210px;
+    /* background-color: aqua; */
+    float: left;
+
+}
+
+/* 二维码  */
+.w_code {
+    float: left;
+}
+
+.w_logoImg {
+    margin-left: 20px;
+    float: left;
+}
+
+.kw_platform {
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 121px;
+    float: left;
+    /* background-color: rgb(174, 201, 192); */
+    color: #9ba099;
+}
+
+.kw_platform p:nth-of-type(2) {
+    margin-top: 24px;
+}
+
+/* 右边详情  */
+.w_tail_nav {
+    /* width: 780px;
+    height: 250px; */
+    margin-left: 50px;
+    float: left;
+    /* background-color: aquamarine; */
+    position: relative;
+}
+
+.w_tail_nav dl {
+    color: #f9fef6;
+    float: left;
+}
+
+.w_tail_nav dt {
+    font-size: 18px;
+}
+
+.w_tail_nav dd a {
+    color: #9ba099;
+}
+
+.w_tail_nav dd:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.w_tail_nav dl:nth-of-type(1) {
+    margin-right: 50px;
+}
+
+.w_tail_nav dl:nth-of-type(2) {
+    margin-right: 95px;
+}
+
+.w_tail_nav dl:nth-of-type(3) {
+    position: absolute;
+    top: 26px;
+    left: 205px;
+}
+
+.w_tail_nav dl:nth-of-type(4) {
+    margin-right: 40px;
+}
+
+h5 {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    color: #9ba099;
+    background-color: #505050;
+}

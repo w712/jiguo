@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.trytop{
+    width: 100%;
+    background-color: #F0F0F0;
+}
+.trytop_t{
+    width: 1100px;
+    margin: 0 auto;
+    height: 85px;
+    line-height: 40px;
+    position: relative;
+}
+.trytop_t .fang{
+    width: 5px;
+    height: 60px;
+    float: left;
+    position: absolute;
+    top:8px;
+    left: 0;
+    background-color: red;
+}
+.trytop_tleft{
+    font-size: 20px;
+    width: 50px;
+    float: left;
+    margin-left: 15px;
+    
+}
+.trytop_tright{
+    float: left;
+    font-size: 16px;
+}
+.trytop_tright ul{
+    text-align: center;
+    margin: 5px 70px;
+
+}
+.trytop_tright li{
+    float: left;
+    margin: 0 50px;
+}
+/* 主体部分 */
+section{
+    width: 100%;
+}
+section .small{
+    width: 1100px;
+    height: 800px;
+    margin: 0 auto;
+}
+/* 主体左边部分 */
+.smallleft{
+    width: 70%;
+    height: 800px;
+    float: left;
+    background-color: aqua;
+}
+.cp{
+    margin-top: 40px;
+}
+
+.kuang{
+    width: 5px;
+    height: 40px;
+    background-color: red;
+    float: left;
+    margin-right: 10px;
+}
+.smallleft .js{
+    font-size: 25px;
+    font-weight: 400;
+    float: left;
+}
+.tp{
+    color: red;
+    font-size: 20px;
+    margin: 15px 0;
+}
+.clear{
+    clear: both;
+}
+.tp2{
+    font-size: 18px;
+}
+.imgs1{
+    width: 650px;
+    margin: 20px 0;
+}
+.tp3{
+    font-size:18px;
+    color: #0A65C1;
+    font-weight: 900; 
+    margin: 18px 0;   
+}
+.tp4{
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+}
+.tp5{
+    margin-top: 20px 0;
+    font-size: 18px;
+    color: black;
+}
+.tp6{
+    font-size: 18px;
+    color:#238BB8;
+    margin: 20px 0;
+}
+.titl1{
+    font-size: 18px;
+    color: red;
+    font-weight: 600;
+}
+
+/* 主体右边部分 */
+.smallright{
+    width: 30%;
+    height: 800px;
+    float: left;
+    background-color: pink;
+}
+.cp1{
+    margin-top: 25px;
+}
+.kuang1{
+    width: 5px;
+    height: 30px;
+    background-color: red;
+    float: left;
+    margin-right: 10px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/pinlei.css">
+    <link rel="stylesheet" href="../css/play1.css">
+    <script src="../js/template-web.js"></script>
+</head>
+<body>
+    <div class="outer">
+        <header id="head">
+            <div class="head_logo"><img src="../img/logonew.png"></div>
+            <ul class="head_center">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="">酷玩</a></li>
+                <li><a href="../guide/daogou.html">导购</a></li>
+                <li><a href="../try/try1.html">试用</a></li>
+                <li><a href="#" >报告</a></li>
+            </ul>
+            <div class="h_right">
+                <img src="../img/search.png" alt="">
+                <span class="h_span"><a href="#">注册</a></span>
+                <span class="h_span"><a>登录</a></span>
+            </div>
+        </header>
+    </div>
+    <!-- 主体部分 -->
+    <div class="cooltil">
+        <p class="coolbig">发现酷玩</p>
+        <ul class="coolli">
+            <li class="coolsm " id="chred"><a href="../play/play1.html">最新</a></li>
+            <li class="coolsm" ><a href="#">最热</a></li>
+            <li class="coolsm"><a href="../play/pinlei.html">品类</a></li>
+        </ul>
+    </div> 
+    <div class="cooln">
+        <div id="full0"></div>
+    </div>
+<script type="text/html" id="fullm">
+    <ul class="full0ul">
+        {{each value}}
+       <li class="list0">
+        <img src={{$value.img}} class="image0">
+        <p class="tittle0">{{$value.text}}</p>
+        <p class="susu0">
+            <span>肖肖</span>
+            <span class="num10">{{$value.like}}</span>
+            <span class="num20">{{$value.words}}</span>
+        </p>
+        
+       </li>
+        {{/each}}
+
+    </ul>
+    <ul class="full0ul">
+        {{each value}}
+       <li class="list0">
+        <img src={{$value.img}} class="image0">
+        <p class="tittle0">{{$value.text}}</p>
+        <p class="susu0">
+            <span>肖肖</span>
+            <span class="num10">{{$value.like}}</span>
+            <span class="num20">{{$value.words}}</span>
+        </p>
+        
+       </li>
+        {{/each}}
+
+    </ul>
+</script>
+<script>
+   function ajd(a){
+    var myajax=new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    myajax.open('get',a,true);
+    myajax.send();
+    myajax.onreadystatechange=function(){
+        if(myajax.readyState==4){
+            if(myajax.status==200){
+                var data=JSON.parse(myajax.responseText);
+                console.log(data);
+                var output0=template('fullm',{value:data[0]});
+                var output1=template('fullm',{value:data[1]});
+                full0.innerHTML=output0;
+                full1.innerHTML=output1;
+    
+            }
+        }
+    }
+};
+ajd('http://192.168.0.128:3000/play/new');
+var coollis=document.getElementsByClassName('coolsm');
+  </script>
+  <!-- 尾部 -->
+  <div class="bottom">
+    <div class="bt-main">
+        <div class="ewm"><img src="../img/code.png" alt=""></div>
+        <div class="b-center">
+            <dl>
+                <dt><img src="../img/logoImg.jpg"></dt>
+                    <dd>全球酷玩试用导购平台</dd>
+                    <dd style="margin-bottom: 15px;">酷'新奇'好玩'品质</dd>
+                    <dd>微信添加'JguoJguo'</dd>
+                    <dd>获取我们的服务</dd>
+            </dl>
+            <dl>
+                <dt>免费试用</dt>
+                    <dd>试用流程</dd>
+                    <dd>如何提高成功率</dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                    <dd>智东西</dd>
+                    <dd>搜狐IT</dd>
+                    <dd>搜狐数码</dd>
+                    <dd>凤凰数码</dd>
+                    <dd>泡泡网</dd>
+                    <dd>ZUK社区</dd>
+                    <dd>极客公园</dd>
+                    <dd>果库</dd>
+            </dl>
+            <dl>
+                <dt  style="margin-bottom: 55px;"></dt>
+                    <dd class="mk">WEIBUSI</dd>
+                    <dd class="mk">腾讯科技</dd>
+                    <dd class="mk">凤凰科技</dd>
+                    <dd class="mk">PConline</dd>
+                    <dd class="mk">3W咖啡</dd>
+                    <dd class="mk">亿觅emie</dd>
+                    <dd class="mk">易迅易启玩</dd>
+            </dl>
+            <dl>
+                <dt>购买攻略</dt>
+                    <dd>美亚海淘教程</dd>
+                    <dd>日亚海淘教程</dd>
+                    <dd>海淘转运攻略</dd>
+                    <dd>kickstarter 众筹购买攻略</dd>
+                    <dd>indiegogo 众筹购买攻略</dd>
+            </dl>
+            <dl>
+                <dt>厂商合作</dt>
+                    <dd>关于极果</dd>
+                    <dd>联系我们</dd>
+                    <dd>商务合作：BD@jiguo.com</dd>
+                    <dd>CEO邮箱：CEO@jiguo.com</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

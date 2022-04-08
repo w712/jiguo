@@ -82,12 +82,11 @@ li{
     font-size:18px;
 
 }
-#chred{
+/* #chred{
     color: #f15431;
     border-bottom: 4px solid #f15431;
     padding-bottom: 8px;
-}
-
+} */
 .report-box {
     background: #f7f7f7;
     overflow: hidden;
