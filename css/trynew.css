@@ -1,151 +1,177 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.trytop{
+
+.trytop {
     width: 100%;
     background-color: #F0F0F0;
 }
-.trytop_t{
+
+.trytop_t {
     width: 1100px;
     margin: 0 auto;
     height: 85px;
     line-height: 40px;
     position: relative;
 }
-.trytop_t .fang{
+
+.trytop_t .fang {
     width: 5px;
     height: 60px;
     float: left;
     position: absolute;
-    top:8px;
+    top: 8px;
     left: 0;
     background-color: red;
 }
-.trytop_tleft{
+
+.trytop_tleft {
     font-size: 20px;
     width: 50px;
     float: left;
     margin-left: 15px;
-    
+
 }
-.trytop_tright{
+
+.trytop_tright {
     float: left;
     font-size: 16px;
 }
-.trytop_tright ul{
+
+.trytop_tright ul {
     text-align: center;
     margin: 5px 70px;
 
 }
-.trytop_tright li{
+
+.trytop_tright li {
     float: left;
     margin: 0 50px;
 }
+
 /* 主体部分 */
-section{
+section {
     width: 100%;
-    
+
 }
-section .small{
+
+section .small {
     width: 1100px;
     height: 800px;
     margin: 0 auto;
 }
+
 /* 主体左边部分 */
-.smallleft{
+.smallleft {
     width: 70%;
     /* height: 800px; */
     float: left;
 }
-.cp{
+
+.cp {
     margin-top: 40px;
 }
 
-.kuang{
+.kuang {
     width: 5px;
     height: 40px;
     background-color: red;
     float: left;
     margin-right: 10px;
 }
-.smallleft .js{
+
+.smallleft .js {
     font-size: 25px;
     font-weight: 400;
     float: left;
 }
-.tp{
+
+.tp {
     color: red;
     font-size: 20px;
     margin: 15px 0;
 }
-.clear{
+
+.clear {
     clear: both;
 }
-.tp2{
+
+.tp2 {
     font-size: 18px;
 }
-.imgs1{
+
+.imgs1 {
     width: 650px;
     margin: 20px 0;
 }
-.tp3{
-    font-size:18px;
+
+.tp3 {
+    font-size: 18px;
     color: #0A65C1;
-    font-weight: 900; 
-    margin: 18px 0;   
+    font-weight: 900;
+    margin: 18px 0;
 }
-.tp4{
+
+.tp4 {
     font-size: 18px;
     color: black;
     font-weight: 400;
 }
-.tp5{
+
+.tp5 {
     margin-top: 20px 0;
     font-size: 18px;
     color: black;
 }
-.tp6{
+
+.tp6 {
     font-size: 18px;
-    color:#238BB8;
+    color: #238BB8;
     margin: 20px 0;
 }
-.titl1{
+
+.titl1 {
     font-size: 18px;
     color: red;
     font-weight: 600;
     margin-top: 20px;
 }
-.titl1 span{
+
+.titl1 span {
     font-size: 16px;
 
 }
 
 /* 主体右边部分 */
-.smallright{
+.smallright {
     width: 25%;
     margin-left: 5%;
     height: 800px;
     float: left;
 }
-.cp1{
+
+.cp1 {
     margin-top: 25px;
 }
-.kuang1{
+
+.kuang1 {
     width: 5px;
     height: 30px;
     background-color: red;
     float: left;
     margin-right: 10px;
 }
-.price{
+
+.price {
     font-size: 40px;
     color: red;
     width: 100%;
     height: 100px;
     line-height: 100px;
 }
-.buy{
+
+.buy {
     width: 100%;
     height: 60px;
     background-color: red;
@@ -154,60 +180,73 @@ section .small{
     border-radius: 5px;
     border: none;
 }
-.from{
+
+.from {
     width: 100%;
     height: 20px;
     text-align: center;
     margin-top: 5px;
     font-size: 14px;
 }
-.k{
-    margin-top:20px ;
+
+.k {
+    margin-top: 20px;
 }
-.tiyan{
+
+.tiyan {
     width: 100%;
     margin-top: 20px;
 }
-.texty{
+
+.texty {
     font-size: 17px;
 }
-.zuih{
+
+.zuih {
     text-align: center;
     margin-top: 20px;
 }
-.hot_try{
-    height: 300px;
-    margin-bottom: 30px;
+
+.hot_try {
+    width: auto;
+    /* background-color: #238BB8; */
+    height: auto;
 }
-.hot_p{
+
+.hot_p {
     padding: 10px 0;
 }
-.list0{
+
+.list0 {
     float: left;
-    margin-left:30px ;
+    margin-left: 30px;
     text-align: center;
     font-size: 20px;
-    border: 1px solid gray ;
+    border: 1px solid gray;
     border-radius: 10px;
     margin-bottom: 30px;
 }
-.sp .left{
+
+.sp .left {
     width: 80px;
     border: 1px solid red;
     height: 30px;
     color: red;
 }
-.tp{
+
+.tp {
     color: black;
 }
-.sp .right{
+
+.sp .right {
     width: 50px;
     border: 1px solid red;
     height: 30px;
     color: red;
     margin-left: 20px;
 }
-.pr{
+
+.pr {
     color: red;
     margin-top: 20px;
 }

@@ -5,7 +5,7 @@ $(function () {
     function kuwan_hot() {
         $.ajax({
             type: 'get',
-            url: "http://127.0.0.1:3000/play/hot",
+            url: "http://192.168.0.100:3000/play/new",
             success: (function (res_2) {
                 console.log(res_2);
                 var kuwan_hot = template('hot', {
@@ -22,7 +22,7 @@ $(function () {
     function kuwan_new() {
         $.ajax({
             type: 'get',
-            url: "http://127.0.0.1:3000/play/new",
+            url: "http://192.168.0.100:3000/play/new",
             success: (function (res_2) {
                 console.log(res_2);
                 var kuwan_new = template('kw', {

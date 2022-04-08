@@ -4,7 +4,7 @@ $(function () {
     function baogao() {
         $.ajax({
             type: 'get',
-            url: "http://192.168.0.128:3000/report/new",
+            url: "http://127.0.0.1:3000/report/new",
             success: (function (res_1) {
                 console.log(res_1);
                 var path_new = template('bg', {
@@ -19,7 +19,7 @@ $(function () {
     function daogao() {
         $.ajax({
             type: 'get',
-            url: "http://192.168.0.128:3000/guid/new",
+            url: "http://127.0.0.1:3000/guid/new",
             success: (function (res) {
                 console.log(res);
                 var path_new = template('tpi', {
@@ -35,7 +35,7 @@ $(function () {
     function kuwan() {
         $.ajax({
             type: 'get',
-            url: "http://192.168.0.128:3000/play/new",
+            url: "http://127.0.0.1:3000/play/new",
             success: (function (res_2) {
                 console.log(res_2);
                 var kuwan_new = template('kw', {

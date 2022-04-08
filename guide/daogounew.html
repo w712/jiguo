@@ -27,15 +27,15 @@
                 </a></div>
             <div class="w_header_nav">
                 <ul>
-                    <li><a href="../html/page.html" style="color: red;">首页</a></li>
+                    <li><a href="../html/page.html">首页</a></li>
                     <li><a href="../play/pinlei.html">酷玩</a></li>
-                    <li><a href="../guide/daogou.html">导购</a></li>
+                    <li><a href="../guide/daogounew.html" style="color: red;">导购</a></li>
                     <li><a href="../try/try1.html">试用</a></li>
                     <li><a href="">报告</a></li>
                 </ul>
             </div>
             <div class="w_login">
-                <a href="#">注册</a>
+                <a href="../zhuce/zhuce.html">注册</a>
             </div>
             <div class="w_search">
                 <a href="#"><img src="../css/img/search.png" alt=""></a>
@@ -88,7 +88,7 @@
 </script>
     <script>
         var myajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
-        myajax.open('get', 'http://192.168.0.100:3000/play/new', true);
+        myajax.open('get', 'http://127.0.0.1:3000/play/new', true);
         myajax.send();
         myajax.onreadystatechange = function () {
             if (myajax.readyState == 4) {
