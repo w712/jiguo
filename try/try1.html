@@ -26,7 +26,7 @@
                         <li><a href="../play/pinlei.html">酷玩</a></li>
                         <li><a href="../guide/daogounew.html">导购</a></li>
                         <li><a href="../try/try1.html" style="color: red;">试用</a></li>
-                        <li><a href="">报告</a></li>
+                        <li><a href="../baogao/baogao.html">报告</a></li>
                     </ul>
                 </div>
                 <div class="w_login">
@@ -207,7 +207,7 @@
     function new_() {
         $.ajax({
             type: "get",
-            url: "http://127.0.0.1:3000/useing//public",
+            url: "http://127.0.0.1:3000/useing/public",
             success: (function (res) {
 
                 const guid = template('tpl', {
@@ -218,7 +218,7 @@
             })
         })
     }
-    // new_()
+    new_()
 
     function new1_() {
         $.ajax({
@@ -237,33 +237,39 @@
     new1_();
 
     $('.main .all ul li').eq(0).click(function () {
-        $(this).toggleClass('k3').siblings().removeClass('k3');
+        $('.qk li').eq(0).addClass('k3').siblings().removeClass('k3');
+        $(this).addClass('k3').siblings().removeClass('k3');
         new1_()
 
     })
     $('.main .all ul li').eq(1).click(function () {
-        $(this).toggleClass('k3').siblings().removeClass('k3');
+        // $('.qk li').eq(0).addClass('k3').siblings().removeClass('k3');
+        $(this).addClass('k3').siblings().removeClass('k3');
 
         new_();
     })
     $('.qk li').eq(0).click(function () {
-        $(this).toggleClass('k3').siblings().removeClass('k3');
+        $(this).addClass('k3').siblings().removeClass('k3');
         new1_()
 
     })
     $('.qk li').eq(1).click(function () {
-        $(this).toggleClass('k3').siblings().removeClass('k3');
+        $(this).addClass('k3').siblings().removeClass('k3');
         new_()
 
     })
     $('.qk li').eq(2).click(function () {
-        $(this).toggleClass('k3').siblings().removeClass('k3');
+        $(this).addClass('k3').siblings().removeClass('k3');
         new1_()
 
     })
     $('.qk li').eq(3).click(function () {
-        $(this).toggleClass('k3').siblings().removeClass('k3');
+        $(this).addClass('k3').siblings().removeClass('k3');
         new_()
 
+
+    })
+    $('.all').on('click', 'div', function () {
+        window.location.href = './trynew.html';
     })
 </script>

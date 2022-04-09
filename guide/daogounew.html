@@ -12,10 +12,7 @@
     <link rel="stylesheet" href="../css/tail.css">
     <link rel="stylesheet" href="../css/pinlei.css">
     <link rel="stylesheet" href="../css/play1.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/dext.css">
     <script src="../js/template-web.js"></script>
-    <link rel="stylesheet" href="../css/tail.css">
 
 </head>
 
@@ -31,7 +28,7 @@
                     <li><a href="../play/pinlei.html">酷玩</a></li>
                     <li><a href="../guide/daogounew.html" style="color: red;">导购</a></li>
                     <li><a href="../try/try1.html">试用</a></li>
-                    <li><a href="">报告</a></li>
+                    <li><a href="../baogao/baogao.html">报告</a></li>
                 </ul>
             </div>
             <div class="w_login">
@@ -85,7 +82,7 @@
         {{/each}}
 
     </ul>
-</script>
+    </script>
     <script>
         var myajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
         myajax.open('get', 'http://127.0.0.1:3000/play/new', true);
@@ -170,3 +167,12 @@
 </body>
 
 </html>
+<script src="../js/jquery.min.js"></script>
+<script>
+    $(function () {
+
+        $('#full0').on('click', 'li', function () {
+            window.location.href = './daogou.html';
+        })
+    })
+</script>
